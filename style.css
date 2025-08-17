@@ -10,6 +10,7 @@ body {
     min-height: 100vh;
     margin: 0;
     overflow-x: hidden;
+    padding: 20px;
 }
 
 .container {
@@ -73,26 +74,32 @@ h2 {
     }
 }
 
-textarea,
-input {
+input,
+textarea {
     width: 100%;
+    padding: 12px 15px;
     margin: 10px 0;
-    padding: 12px;
-    border-radius: 10px;
     border: none;
-    outline: none;
-    background: rgba(40, 20, 60, 0.8);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
     color: #fff;
-    font-size: 15px;
-    box-shadow: inset 0 0 12px #6600ff;
-    transition: 0.3s;
+    font-size: 16px;
+
+    /* Biar ukuran konsisten */
+    box-sizing: border-box;
+
+    /* Efek neon */
+    box-shadow:
+        0 0 8px #ff00ff,
+        0 0 15px #6600ff;
+    outline: none;
 }
 
-textarea:focus,
-input:focus {
+input:focus,
+textarea:focus {
     box-shadow:
-        0 0 15px #ff00ff,
-        inset 0 0 20px #00ffff;
+        0 0 12px #ff00ff,
+        0 0 25px #00ffff;
 }
 
 label {
