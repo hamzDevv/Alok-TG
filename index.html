@@ -2,54 +2,86 @@
 <html lang="id">
     <head>
         <meta charset="UTF-8" />
-        <title>Alok Text Generator</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <!-- AOS CSS -->
-        <link
-            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-            rel="stylesheet"
-        />
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="style.css" />
+        <title>Alok Text Generator</title>
+        <style>
+            html {
+                padding: 20px;
+            }
+            body {
+                background: linear-gradient(135deg, #1a1a2e, #16213e);
+                color: #fff;
+                font-family: "Poppins", sans-serif;
+                text-align: center;
+            }
+            .card {
+                max-width: 700px;
+                margin: auto;
+                background: rgba(255, 255, 255, 0.05);
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 0 25px rgba(255, 0, 255, 0.2);
+            }
+            h1 {
+                font-size: 2em;
+                color: #ff66ff;
+                margin-bottom: 20px;
+            }
+            p {
+                line-height: 1.6;
+                margin: 15px 0;
+                font-size: 1.1em;
+            }
+            button {
+                margin-top: 25px;
+                padding: 12px 30px;
+                background: #6a00ff;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                font-size: 1em;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            button:hover {
+                background: #a100ff;
+                transform: scale(1.05);
+            }
+        </style>
     </head>
     <body>
-        <div class="container" data-aos="zoom-in">
-            <h2 data-aos="fade-down">Alok Text Generator</h2>
-            <div class="contoh">
-                <h4>Contohnyah</h4>
-                <pre>Hello World</pre>
-                <pre>Foto {i}</pre>
-                <pre>I ♡ U {i}%</pre>
-            </div>
-
-            <label>Text Luh</label>
-            <textarea id="template" rows="3" data-aos="fade-right">
-Isi Disinih</textarea
-            >
-
-            <label>Dari:</label>
-            <input type="number" id="start" value="1" data-aos="fade-left" />
-
-            <label>Sampai:</label>
-            <input type="number" id="end" value="10" data-aos="fade-left" />
-
-            <button onclick="generate()" data-aos="flip-up">Generate</button>
-
-            <h3 data-aos="fade-up">Hasil:</h3>
-            <pre id="output" data-aos="fade-up"></pre>
-            <button class="copy-btn" onclick="copyText()" data-aos="zoom-in">
-                Copy</button
-            ><br /><br /><br />
-            <footer>
-                <p>&copy; Hamz Dep 🤭</p>
-            </footer>
+        <div class="card">
+            <h1>Selamat Datang di Alok Text Generator 🗿</h1>
+            <p>
+                Website ini dibuat untuk membantu lu mengubah teks biasa menjadi
+                kode HTML siap pakai.
+            </p>
+            <p>
+                Misalnya lu punya gambar begini:
+                <br />
+                <code>&lt;img src="foto1.jpg" alt="Foto 1" /&gt;</code>
+            </p>
+            <p>
+                Lalu lu pengen ubah bagian tertentu seperti <b>src</b> atau
+                <b>alt</b>, tinggal pilih bagian yang mau diubah → ketik yang
+                baru → otomatis jadi kode baru.
+            </p>
+            <p>
+                Jadi, web ini berguna buat mempercepat proses bikin kode tanpa
+                harus ngetik manual berulang-ulang. Cocok buat
+                <b>PEMULA</b> yang belajar HTML maupun yang lagi bikin proyek
+                cepet🗿
+            </p>
+            <p>Pokoknya kyk looping gitu lah ahk susah bgt jelasinnya</p>
+            <p>Dah gitu aja moga paham 🗿</p>
+            <b>Kalo ga paham ulik aja sendiri🗿</b><br /><br />
+            <button onclick="masuk()"><b>Y, Phm</b></button>
         </div>
 
-        <!-- AOS JS -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <!-- Custom JS -->
-        <script src="script.js"></script>
+        <script>
+            function masuk() {
+                window.location.href = "gen.html";
+            }
+        </script>
     </body>
 </html>

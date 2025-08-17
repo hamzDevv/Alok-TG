@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Alok Text Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- AOS CSS -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container" data-aos="zoom-in">
+            <h2 data-aos="fade-down">Alok Text Generator</h2>
+            <div class="contoh">
+                <h4>Contohnyah</h4>
+                <pre>Hello World</pre>
+                <pre>Foto {i}</pre>
+                <pre>I ♡ U {i}%</pre>
+            </div>
+
+            <label>Text Luh</label>
+            <textarea id="template" rows="3" data-aos="fade-right">
+Isi Disinih</textarea
+            >
+
+            <label>Dari:</label>
+            <input type="number" id="start" value="1" data-aos="fade-left" />
+
+            <label>Sampai:</label>
+            <input type="number" id="end" value="10" data-aos="fade-left" />
+
+            <button onclick="generate()" data-aos="flip-up">Generate</button>
+
+            <h3 data-aos="fade-up">Hasil:</h3>
+            <pre id="output" data-aos="fade-up"></pre>
+            <button class="copy-btn" onclick="copyText()" data-aos="zoom-in">
+                Copy</button
+            ><br /><br /><br />
+            <footer>
+                <p>&copy; Hamz Dep 🤭</p>
+            </footer>
+        </div>
+
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Custom JS -->
+        <script src="script.js"></script>
+    </body>
+</html>
